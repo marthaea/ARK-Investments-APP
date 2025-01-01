@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Ark Investments
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ark Investments is a dynamic React-based real estate application that allows users to explore, list, and manage properties efficiently. The app integrates Firebase as a backend for data storage and authentication, making it a secure and scalable solution for real estate businesses.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### User-Friendly Interface
 
-### `npm start`
+- Explore properties with detailed descriptions and images.
+- Search for specific properties by location or type.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Property Management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Add new properties, including name, description, price, and image URL.
+- View properties in a structured card layout.
 
-### `npm test`
+### Interactive Map
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Explore highlighted locations in Uganda, including Entebbe, Buwate, and Najjera, through an embedded interactive map.
 
-### `npm run build`
+### Firebase Integration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Cloud Firestore is used to store property data.
+- Allows unauthenticated users to add properties for seamless accessibility.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React**: For building the front-end user interface.
+- **Firebase**: For backend services including Firestore for data and Hosting.
+- **CSS**: Custom styling for the app layout.
+- **Google Maps**: For interactive map integration.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js and npm installed.
+- Firebase account set up.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Steps
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/your-username/ark-investments.git
+   cd ark-investments
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Install dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm install
+   ```
 
-### Code Splitting
+3. Configure Firebase:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - Create a Firebase project.
+   - Enable Firestore and Hosting.
+   - Replace `firebaseConfig` in the `firebase.js` file with your Firebase configuration.
 
-### Analyzing the Bundle Size
+4. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm start
+   ```
 
-### Making a Progressive Web App
+## File Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **src/components**: Contains React components like `Home`, `Properties`, and `AddProperty`.
+- **src/firebase.js**: Firebase configuration and initialization.
+- **src/styles**: Contains CSS files for styling components.
 
-### Advanced Configuration
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Adding a Property
 
-### Deployment
+1. Navigate to the **Add New Property** section.
+2. Fill in the property details, including name, description, price, and image URL.
+3. Submit the form to add the property to the database.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Viewing Properties
 
-### `npm run build` fails to minify
+- Browse the list of properties on the homepage.
+- Each property card displays an image, name, description, and price.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Map Interaction
+
+- Scroll to the **Explore Uganda** section.
+- View highlighted locations via the interactive map.
+
+## Known Issues
+
+- Ensure the image URLs used are publicly accessible (e.g., Imgur links in the correct embed format).
+- The app relies on Firestore rules to allow unauthenticated users to add properties.
+
+## Future Enhancements
+
+- Add user authentication for secure property management.
+- Implement advanced search and filter options.
+- Introduce a booking feature for property tours.
+- Optimize for mobile responsiveness.
+
+## Contributors
+
+- **Katusiime Praise Martha**: Front end developer
+- **Morgan Owanyi**: Back end developer
+
+## License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute as needed.
+
+---
+
+Thank you for using Ark Investments! If you encounter any issues or have suggestions for improvement, feel free to reach out.
+
